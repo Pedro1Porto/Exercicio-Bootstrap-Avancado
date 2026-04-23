@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="sticky-top bg-primary bg-gradient">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1 class="fs-1">Linguagens de Programação</h1>
+
+                <button data-bs-target="#menu" type="button" class="navbar-toggler navbar-expand-sm" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav id="menu" class="collapse navbar justify-content-center navbar-collapse navbar-expand-lg">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="p-1 nav-item">
+                            <a class="btn btn-info border border-dark text-center" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="p-1 nav-item">
+                            <a class="btn btn-info border border-dark text-center" href="#linguagens">Linguagens</a>
+                        </li>
+                        <li class="p-1 nav-item">
+                            <div class="btn-group">
+                                <a class="btn btn-info border border-dark text-center" href="#contato">Contato</a>
+                                    <div class="dropdown">
+                                        <button data-bs-auto-close="outside" data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle border border-info border-bottom-0 text-center"></button>
+                                        <form class="dropdown-menu p-4 dropdown-form" style="width: 250px;">
+                                            <label class="form-label">Digite seu email:</label>
+                                            <input type="email" class="form-control mb-3" placeholder="email@exemplo.com">
+
+                                            <label class="form-label">Digite sua senha:</label>
+                                            <input type="password" class="form-control mb-3" placeholder="Sua senha">
+
+                                            <div class="form-check">
+                                                <input type="checkbox" class="mb-3 form-check-input">
+                                                <label class="form-check-label">Deixar Logado</label>
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary px-5 m-4">Enviar</button>
+                                        </form>
+                                    </div> <!--dropdown-->
+                            </div><!--btn-group-->
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
