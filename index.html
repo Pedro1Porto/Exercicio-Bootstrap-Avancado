@@ -11,38 +11,50 @@
     <header class="sticky-top bg-primary bg-gradient">
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <h1 class="fs-1">Linguagens de Programação</h1>
+                <!--titulos-->
+                <h1 class="fs-1">Distribuições Linux</h1>
 
+                <!--icone de menu hamburguer-->
                 <button data-bs-target="#menu" type="button" class="navbar-toggler navbar-expand-sm" data-bs-toggle="collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!--listagem de botoes-->
                 <nav id="menu" class="collapse navbar justify-content-center navbar-collapse navbar-expand-lg">
                     <ul class="nav navbar-nav nav-pills">
+                        <!--primeiro botao-->
                         <li class="p-1 nav-item">
                             <a class="btn btn-info border border-dark text-center" href="#carousel">Carousel</a>
                         </li>
+                        <!--segundo botao-->
                         <li class="p-1 nav-item">
-                            <a class="btn btn-info border border-dark text-center" href="#linguagens">Linguagens</a>
+                            <a class="btn btn-info border border-dark text-center" href="#distros">Distros</a>
                         </li>
+                        <!--terceiro botao-->
                         <li class="p-1 nav-item">
                             <div class="btn-group">
                                 <a class="btn btn-info border border-dark text-center" href="#contato">Contato</a>
+                                    <!--botao de dropdown para formulario-->
                                     <div class="dropdown">
                                         <button data-bs-auto-close="outside" data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle border border-info border-bottom-0 text-center"></button>
                                         <form class="dropdown-menu p-4 dropdown-form" style="width: 250px;">
+                                            <!--email-->
                                             <label class="form-label">Digite seu email:</label>
                                             <input type="email" class="form-control mb-3" placeholder="email@exemplo.com">
 
+                                            <!--senha-->
                                             <label class="form-label">Digite sua senha:</label>
                                             <input type="password" class="form-control mb-3" placeholder="Sua senha">
 
+                                            <!--caixa de checagem-->
                                             <div class="form-check">
                                                 <input type="checkbox" class="mb-3 form-check-input">
                                                 <label class="form-check-label">Deixar Logado</label>
                                             </div>
-
+                                            
+                                            <!--botao de enviar formulario-->
                                             <button type="button" class="btn btn-primary px-5 m-4">Enviar</button>
+
                                         </form>
                                     </div> <!--dropdown-->
                             </div><!--btn-group-->
@@ -53,6 +65,58 @@
             </div>
         </div>
     </header>
+
+    <section id="carousel" class="carousel slide container" data-bs-ride="carousel"> <!--é necessario colocar id para referenciar nos botoes-->
+        <!--carousel funcional-->
+        <div class="carousel-inner">
+
+            <!--primeira imagem do carousel-->
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/distros.jpeg" alt="imagem1">
+                <!--legenda do carousel-->
+                <div class="carousel-caption text-dark">
+                    <h1 class="display-5">Distros Linux</h1>
+                    <p class="font-italic">Algumas distribuições que podem te ajudar!</p>
+                </div>
+            </div>
+            <!--segunda imagem do carousel-->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/distross.jpeg" alt="imagem2">
+                <!--legenda do carousel-->
+                <div class="carousel-caption">
+                    <h1 class="display-5">Distros Linux</h1>
+                    <p class="font-italic">Dependendo de suas ferramentas utilizáveis, há outras variantes aqui!</p>
+                </div>
+            </div>
+            <!--terceira imagem do carousel-->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/distrosss.png" alt="imagem3">
+                <!--legenda do carousel-->
+                <div class="carousel-caption">
+                    <h1 class="display-5">Distros Linux</h1>
+                    <p class="font-italic">Diferentes formas de chegar ao mesmo lugar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--botao de voltar um slide-->
+        <button type="button" class="bg-secondary carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!--botao de avançar um slide-->
+        <button type="button" class="bg-secondary carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!--bootes de selecionar o slide que deseja ir-->
+        <div class="carousel-indicators m-0">
+            <button class="active bg-dark" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+            <button class="bg-dark" type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button class="bg-dark" type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+
+    </section>
 
 <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
